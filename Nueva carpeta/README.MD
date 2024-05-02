@@ -8,12 +8,9 @@
 * Esteban Palomar Murcia
 * Ingrid Medina
 
-## PROYECTOS
+## PROYECTO
 
 * BARBERIA
-* RESTAURANTE 
-
-
 
 ### informacion de la barberia .
 
@@ -21,7 +18,7 @@
 
 # Informacion de los Barberos
 
-* Arnol Martínez - BASICO
+* Arnol Martínez - APRENDIZ
 Experiencia: ARNOL apenas esta empezando  .
 Formación: Se esta formando en una reconocida academia de peluquería en la ciudad de Neiva.
 Especialidades: se esta especialisando en cortes de cabello clásicos y modernos, así como en el cuidado de barbas.
@@ -41,3 +38,13 @@ Formación: Se ha formado como aprendiz en un salón de renombre, donde adquiri�
 Especialidades: Destaca en cortes clásicos y en el cuidado de la piel, ofreciendo a sus clientes un servicio de alta calidad y atención personalizada.
 Ubicación: Manuel ofrece servicios a domicilio en toda la ciudad, brindando comodidad y conveniencia a sus clientes. Se recomienda reservar cita previa para garantizar disponibilidad.
 Horario de trabajo: Su horario es flexible y está disponible de lunes a domingo, adaptándose a la disponibilidad de sus clientes para brindar un servicio óptimo.
+
+
+
+## PROYECTO 
+
+* RESTAURANTE 
+
+### Informacion del Restaurante
+
+* 
