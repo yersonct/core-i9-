@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/comida.js"></script>
+</head>
+<body>
+    <!-- let cantidadP = "Cuantos son señor usuario??";
+let msjError = "valor invalido, intente nuevamente";
+let msp = "señor usuario ingrese su nombre??"
+let input  ;
+let rangoFactu = /^[1-4]$/;
+do{
+
+
+	alert("Bienvenidos a mi restaurante");  
+	
+	do{
+		input = prompt(msp)
+		nombre = nombreCorrecto(input) ;
+
+	}while(nombre == false)
+
+	valor = numberValidar(cantidadP,msjError,rangoFactu)
+	
+     
+
+	function validationNumber(input,rango){
+		if (rango.test(input)) { // /^\d+$/ expresion regular que verifica que sean numeros
+			result = parseFloat(input);
+		} else {
+			result = false; 
+		}
+		return result;
+	}
+	function numberValidar(mensaje,msjError,rangox = /^[1-9]\d*$/){
+		let pase = true;
+		let info;
+		do{
+			info = pase === true ? mensaje :` ${mensaje}\n\n${msjError}`;
+			let input = prompt(info);
+			resultado = validationNumber(input,rangox);
+			pase = resultado == false ? false : true;
+		}while(resultado == false);
+	
+		return resultado;
+	}
+
+	function nombreCorrecto(input){
+		if (/^[a-zA-Z]+\s[a-zA-Z]+$/.test(input)) {
+			result = input;
+		} else {
+			result = false; // entrada no valida
+		}
+		return result; 
+	} -->
+</body>
+</html>
