@@ -44,7 +44,9 @@ Horario de trabajo: Su horario es flexible y está disponible de lunes a domingo
 ## PROYECTO 
 
 * RESTAURANTE 
-
+ 
 ### Informacion del Restaurante
 
-* 
+* en nuestro restaurante le brindamos al cliente la facilidad
+  de poder reservar desde nuestra pagina el dia y la hora y 
+  que platos desean consumir. 
