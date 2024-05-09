@@ -93,21 +93,24 @@ barberia.forEach((data,i)=>{
     if(data.clientes.length == 0){
         alert("No tiene clientes")
     }else{
+        // restaurant.some(data => (data.mesa === ubicMesa ));
         data.clientes.forEach((cliente, i) =>{
             let msj = `Estimado cliente ${cliente.nombre} ingrese la hora de la reserva\n(en formato militar - De 8 a 19 horas):`;
             let hora = numberValidar(msj,fueraRg, rangoHora);
-            cliente.hora_agendada = hora; 
+            // cliente.hora_agendada = hora; 
             if(i == 0){
                 console.log('no hay necesidad de comparar')
+                cliente.hora_agendada = hora; 
             }else{
-                if(data.clientes[i - 1].hora_agendada == hora){
+                let eval = data.clientes.some(data => (data.hora_agendada === hora ));
+                if(eval){
                     let msj = `Estimado cliente ${cliente.nombre} ingrese la hora de la reserva\n(en formato militar - De 8 a 19 horas):\nLa hora dada ya esta reservada por otro cliente`;
                     do{
                         hora = numberValidar(msj,fueraRg, rangoHora);
-                    }while(hora == data.clientes[i - 1].hora_agendada); 
+                    }while(data.clientes.some(data => (data.hora_agendada === hora ))); 
                     cliente.hora_agendada = hora;
                 }else{
-                    console.log('hora disponible');
+                    data.clientes.some(data => (data.hora_agendada === hora ));
                 }
             }
         })
@@ -126,7 +129,7 @@ for(let i = 0; i<montoDinero.length; i++){
 do{
     infoFactura = "";
     facturacion = `========== Inventario de la barberia ==========\n`;
-    facturacion += `Ganacias individuales: \n`;
+    facturacion += `------Ganacias individuales------- \nElija una opcion para ver las ganacias generadas:\n`;
     barberia.forEach((data, i) =>{
         facturacion += `${i + 1}. ${data.nombre_barbero} (${data.nivel_profesion})\n`;
     });
@@ -148,7 +151,7 @@ do{
         infoFactura += `\nPara volver al menu de facturación digite 1, si quiere salir de todo el sistema 2:`;
     }else{
         infoFactura += `======= Barbero: ${barberoLocation.nombre_barbero} (${barberoLocation.nivel_profesion}) ======\n`;
-        infoFactura += `Precio del servicio : ${barberoLocation.precio_servicio}\n`; 
+        infoFactura += `Precio del servicio : ${barberoLocation.precio_servicio}\n Cliente de los barberos:\n`; 
         barberoLocation.clientes.forEach((data, i)=>{
             infoFactura += `${i + 1}. ${data.nombre}\n -> Hora de reserva: ${data.hora_agendada}:00\n`;
         });
